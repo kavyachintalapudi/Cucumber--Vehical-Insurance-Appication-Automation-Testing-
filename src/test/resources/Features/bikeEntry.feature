@@ -1,7 +1,30 @@
-Feature: Bike Entry
+@validbikenumber
 
-@smoke
-Scenario: To verify that we are able to search register bike numbers
-Given user enters valid bike number as "AP37DT1228"
-When user clicks on search on view prices 
-Then user is able to see the info of that bike
+Feature: Bike Entry
+Scenario: To verify that the user is able to enter bike number
+Given user enter valid bike number 
+When user click on view prices button
+Then user is able to navigate the registration page
+
+
+@invalidBikeNumber
+
+Scenario: To verify that  user is enter invalid bike number
+Given user enter invalid bike number 
+When user click on view prices button
+Then user is able to see error message at bike number text box field
+
+
+@callusbutton
+
+Scenario: To verify that the user is able to click on call us button
+Given user click on call us button
+Then user can able to view the call number
+
+
+@Loginhyperlink
+Scenario: To verify that user is able to click on login hyperlink
+Given user click on login hyperlink
+Then user is able to navigate the login page
+
+

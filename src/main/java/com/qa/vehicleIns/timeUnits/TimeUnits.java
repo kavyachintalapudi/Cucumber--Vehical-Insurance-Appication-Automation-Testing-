@@ -7,7 +7,7 @@ public class TimeUnits {
 	 * 1 means 1 second 
 	 * 10 mean 10 seconds ...*/
      public static final int PAGE_LOAD_TIME=10;
-     public static final int IMPLICIT_WAIT=10;
+     public static final int IMPLICIT_WAIT=30;
      public static final int KEEP_HIGHLIGHTED=5;
      
      
