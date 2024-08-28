@@ -1,5 +1,8 @@
 package stepDefination;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
 import com.qa.vehicleIns.driverfactory.DriverFactory;
 import com.qa.vehicleIns.pages.BikeEntryPage;
 
@@ -22,8 +25,16 @@ public class BikeEntry {
 //		bikeEntP=new BikeEntryPage(DriverFactory.getDriver());
 //		//bikeEntP.enterBikeNum("AP37DT1228");
 //	}
-
 	
+	@Given("user should click on vehicle insurance module button")
+	public void user_should_click_on_vehicle_insurance_module_button() {
+	    bp.clickinsurance();
+	}
+
+	@Then("user is able to navigate the bike entry page")
+	public void user_is_able_to_navigate_the_bike_entry_page() {
+	    
+	}	
 	@Given("user enter valid bike number")
 	public void user_enter_valid_bike_number() {
 	    bp.enterbikenum("TS29AA2049");

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Vehicle Insurance Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 16, 2024 01:29:05 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 27, 2024 12:00:24 pm</span></a>
 </li>
 </ul>
 </div>
@@ -52,11 +52,6 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('category-view')">
-<a id="nav-category" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tag"></i></span>
-</a>
-</li>
 <li class="nav-item dropdown" onclick="toggleView('exception-view')">
 <a id="nav-exception" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-bug"></i></span>
@@ -71,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 16, 2024 01:29:05 pm</h3>
+<h3>Aug 27, 2024 12:00:24 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 16, 2024 01:29:14 pm</h3>
+<h3>Aug 27, 2024 12:00:30 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='33%'><b>1</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='87%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='3%'><b>1</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='3%'><b>1</b> steps failed,
+<b>28</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,43 +162,10 @@
 </div></div>
 <script>
 var timeline = {
-"Bike Entry":9.039
+"To verify that functionalities of the registration page":4.893
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 category-container">
-<div class="card">
-<div class="card-header"><p>Tags</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@validbikenumber</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@insurancemodulebutton</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@invalidBikeNumber</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -240,16 +202,16 @@ failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
+passChild: 0,
 failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
+passGrandChild: 1,
 failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 28,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -268,12 +230,6 @@ eventsCount: 5,
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
 </li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
-<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@validbikenumber</a><a class="dropdown-item" href="#">@insurancemodulebutton</a><a class="dropdown-item" href="#">@invalidBikeNumber</a>
-</ul>
-</li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
@@ -282,9 +238,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Bike Entry</p>
+            <p class="name">To verify that functionalities of the registration page</p>
             <p class="text-sm">
-              <span>1:29:05 pm</span> / <span>00:00:09:039</span>
+              <span>12:00:26 pm</span> / <span>00:00:04:893</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -292,10 +248,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Bike Entry</h5>
-<span class='badge badge-success'>08.16.2024 1:29:05 pm</span>
-<span class='badge badge-danger'>08.16.2024 1:29:14 pm</span>
-<span class='badge badge-default'>00:00:09:039</span>
+<h5 class="test-status text-fail">To verify that functionalities of the registration page</h5>
+<span class='badge badge-success'>08.27.2024 12:00:26 pm</span>
+<span class='badge badge-danger'>08.27.2024 12:00:30 pm</span>
+<span class='badge badge-default'>00:00:04:893</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -307,7 +263,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To verify that user is  able to search the details</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>To verify  that user is able to enter valid first name</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -315,76 +271,164 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step fail-bg" title="stepDefination.BikeEntry.user_should_click_on_vehicle_insurance_module_button()">
+              <div class="step fail-bg" title="stepDefination.Registration.user_should_click_on_vehicle_insurance_module_button()">
                 <span>Given user should click on vehicle insurance module button</span>
       <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.vehicleIns.pages.BikeEntryPage.click(String)" because "this.bikeEntP" is null
-	at stepDefination.BikeEntry.user_should_click_on_vehicle_insurance_module_button(BikeEntry.java:33)
-	at ✽.user should click on vehicle insurance module button(file:///C:/Project/Vehicleinsurance_automation/./src/test/resources/Features/bikeEntry.feature:5)
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "com.qa.vehicleIns.pages.RegistrationPage.clickinsurance()" because "this.rs" is null
+	at stepDefination.Registration.user_should_click_on_vehicle_insurance_module_button(Registration.java:34)
+	at ✽.user should click on vehicle insurance module button(file:///C:/Project/Vehicleinsurance_automation/./src/test/resources/Features/registration.feature:5)
 </textarea>
       
       </div>
               </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_is_able_to_navigate_the_bike_entry_page()">
+                <span>Then user is able to navigate the bike entry page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_enter_valid_bike_number()">
+                <span>Given user enter valid bike number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_click_on_view_prices_button()">
+                <span>When user click on view prices button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_is_able_to_navigate_the_registration_page()">
+                <span>Then user is able to navigate the registration page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_enter_valid_first_name_field(java.lang.String)">
+                <span>Given user able to enter valid first name field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_first_name_field_should_be_accepted()">
+                <span>Then the first name field should be accepted</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_enter_valid_address_field()">
+                <span>And user able to enter valid address field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_address_field_should_be_accepted()">
+                <span>Then the address field should be accepted</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_select_dropdown_list_in_state()">
+                <span>And user able to select dropdown list in state</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_state_field_should_be_selected()">
+                <span>Then the state field should be selected</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_enter_valid_phone_number()">
+                <span>And user able to enter valid phone number</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_field_should_be_accepted()">
+                <span>Then the field should be accepted</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.click_on_send_otp_button()">
+                <span>When click on send otp button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_send_otp_is_sucessfull_and_otp_fields_should_be_displayed()">
+                <span>Then the send otp is sucessfull and otp fields should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_enter_valid_otp()">
+                <span>And user able to enter valid otp</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.click_on_otp_button()">
+                <span>When click on otp button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.otp_field_should_be_accepted_and_navigated_to_the_next_field()">
+                <span>Then otp field should be accepted and navigated to the next field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_enter_valid_gmail()">
+                <span>And user able to enter valid gmail</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_field_should_be_accepted()">
+                <span>Then the field should be accepted</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.click_on_send_email_otp_button()">
+                <span>When click on send email otp button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_send_otp_is_sucessfull_and_otp_fields_should_be_displayed()">
+                <span>Then the send otp is sucessfull and otp fields should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_enter_valid_email_otp()">
+                <span>And user able to enter valid email otp</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.click_on_email_otp_button()">
+                <span>When click on email otp button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.the_otp_field_should_be_accepted_and_navigated_to_the_next_field()">
+                <span>Then the otp field should be accepted and navigated to the next field</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_click_on_call_us_button()">
+                <span>And user able to click on call us button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.it_display_the_one_phone_number_in_call_us_button_below()">
+                <span>Then it display the one phone number in call us button below</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.user_able_to_click_on_register_button()">
+                <span>And user able to click on register button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefination.Registration.it_is_navigated_to_the_qutation_page()">
+                <span>Then it is navigated to the qutation page</span>
+      <div>Step skipped
+      </div>
+              </div>
               <div class="step pass-bg" title="AFTER">
                 <span>applicationHooks.ApplicationHook.tearDown(io.cucumber.java.Scenario)</span>
-      <div>To_verify_that_user_is__able_to_search_the_details
+      <div>To_verify__that_user_is_able_to_enter_valid_first_name
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../embedded1.png' src="../embedded1.png">
     
     </div></div>
 </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>To verify that the user is able to enter bike number</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefination.BikeEntry.user_enter_valid_bike_number_as(java.lang.String)">
-                <span>Given user enter valid bike number as "AP37DT1228"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefination.BikeEntry.user_click_on_view_prices_button()">
-                <span>When user click on view prices button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefination.BikeEntry.user_is_able_to_navigate_the_registration_page()">
-                <span>Then user is able to navigate the registration page</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>To verify that user is enter invalid bike number</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepDefination.BikeEntry.user_enter_invalid_bike_number_as(java.lang.String)">
-                <span>Given user enter invalid bike number as "AP37DT122"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefination.BikeEntry.user_click_on_view_prices_button()">
-                <span>When user click on view prices button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepDefination.BikeEntry.user_is_able_to_see_error_message_at_bike_number_text_box_field()">
-                <span>Then user is able to see error message at bike number text box field</span>
       <div>
       </div>
               </div>
@@ -403,131 +447,7 @@ eventsCount: 5,
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@validbikenumber</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@validbikenumber</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:29:09 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='8'>To verify that the user is able to enter bike number</a>
-<div class="">
-<span class="badge badge-default">Bike Entry.To verify that the user is able to enter bike number</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@insurancemodulebutton</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@insurancemodulebutton</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>13:29:05 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>To verify that user is able to search the details</a>
-<div class="">
-<span class="badge badge-default">Bike Entry.To verify that user is able to search the details</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@invalidBikeNumber</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@invalidBikeNumber</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>13:29:11 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='16'>To verify that user is enter invalid bike number</a>
-<div class="">
-<span class="badge badge-default">Bike Entry.To verify that user is enter invalid bike number</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
@@ -559,11 +479,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>13:29:08 pm</td>
+<td>12:00:30 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='5'>Given user should click on vehicle insurance module button</a>
 <div class="">
-<span class="badge badge-default">Bike Entry.To verify that user is able to search the details.Given user should click on vehicle insurance module button</span>
+<span class="badge badge-default">To verify that functionalities of the registration page.To verify that user is able to enter valid first name.Given user should click on vehicle insurance module button</span>
 </div>
 </td>
 </tr>

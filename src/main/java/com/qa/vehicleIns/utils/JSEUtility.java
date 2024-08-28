@@ -9,8 +9,8 @@ import com.qa.vehicleIns.timeUnits.TimeUnits;
 public class JSEUtility {
 
 	// Execute JavaScript code
-    public static void executeJavaScript(WebDriver driver, String script) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+    public static void executeJavaScript(Object object, String script) {
+        JavascriptExecutor js = (JavascriptExecutor) object;
         js.executeScript(script);
     }
 
@@ -26,8 +26,8 @@ public class JSEUtility {
     }
 
     // Scroll to the bottom of the page
-    public static void scrollToBottom(WebDriver driver) {
-        executeJavaScript(driver, "window.scrollTo(0, document.body.scrollHeight)");
+    public static void scrollToBottom(Object object) {
+        executeJavaScript(object, "window.scrollTo(0, document.body.scrollHeight)");
     }
 
     // Highlight an element using JavaScript and after few seconds change it again to normal Position

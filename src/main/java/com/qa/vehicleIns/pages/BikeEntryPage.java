@@ -28,9 +28,9 @@ public class BikeEntryPage extends DriverFactory {
 	
 //	@FindBy(xpath = "//h6[text()='Vehicle Insurance']")
 //	private WebElement insuranceButton;
-	//*******************method*****************************
-	
-
+	/*********************module button********************/
+    @FindBy(xpath = "//a[@href=\"/Bikeentry\"]")
+    private WebElement button;
 	/********************** valid data *************/
 	@FindBy(xpath = "//input[@ type=\"text\"]")
 	private WebElement enterthebikenum;
@@ -52,6 +52,10 @@ public class BikeEntryPage extends DriverFactory {
 
 	
 	//***************************************************//
+	public void clickinsurance() {
+		EleInt.click(button);
+	}
+	
 	public void enterbikenum(String value)
 	{
 	EleInt.typeText(enterthebikenum, value);
